@@ -18,7 +18,8 @@ classes = [
     "Lifestyle and Fashion",
     "Politics",
     "Science and Technology",
-    "Sports"
+    "Sports",
+    "Crime"
 ]
 mlb = MultiLabelBinarizer(classes=classes)
 mlb.fit([classes])  # just to initialize it
