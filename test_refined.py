@@ -11,7 +11,7 @@ model_name = "dstefa/roberta-base_topic_classification_nyt_news"
 tokenizer = RobertaTokenizer.from_pretrained(model_name)
 model = RobertaForSequenceClassification.from_pretrained(model_name) 
 
-# model_path = "./refined_roberta" 
+# model_path = "./saved_models/refined_roberta" 
 # tokenizer = RobertaTokenizer.from_pretrained(model_path)
 # model = RobertaForSequenceClassification.from_pretrained(model_path) 
 # Use GPU if available

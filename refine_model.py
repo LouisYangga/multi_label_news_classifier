@@ -106,8 +106,8 @@ trainer.train()
 
 
 # Save the fine-tuned model
-model.save_pretrained("./refined_roberta")
-tokenizer.save_pretrained("./refined_roberta")
+model.save_pretrained("./saved_models/refined_roberta")
+tokenizer.save_pretrained("./saved_models/refined_roberta")
 
 print("Fine-tuning complete! Model saved to './refined_roberta'")
 
