@@ -1,0 +1,8 @@
+# Ignore model files
+saved_models/*
+!saved_models/README.md
+
+# Ignore cache, compiled files, etc.
+__pycache__/
+*.pyc
+.DS_Store
