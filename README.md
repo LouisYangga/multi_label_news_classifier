@@ -38,22 +38,44 @@ The project uses datasets from various sources, including:
 4. **Refinement**:
    - Models are fine-tuned using additional datasets to improve accuracy.
 
+## Labels (Classes)
+   The model predicts from the following 8 classes:
+
+   - Arts, Culture, and Entertainment
+   - Business and Finance
+   - Health and Wellness
+   - Lifestyle and Fashion
+   - Politics
+   - Science and Technology
+   - Sports
+   - Crime
+
 ## Results
 The project outputs predictions in CSV format, such as:
 
-test_results_refined.csv: Contains predicted and actual labels for test data.
+- test_results_refined.csv: Contains predicted and actual labels for test data.
 
-The multilabel model has text input and output the labels from the classes = [
-    "Arts, Culture, and Entertainment",
-    "Business and Finance",
-    "Health and Wellness",
-    "Lifestyle and Fashion",
-    "Politics",
-    "Science and Technology",
-    "Sports",
-    "Crime"
-]
+The multi-label model accepts text input and returns multiple predicted labels from the classes above.
+
+## Model Files
+**Note:**
+Due to file size limitation (~500MB) the trained model files are stored externally on Google Dive.
+You can download them from the link in saved_models README file and place them in the saved_models directory.
+
+## Getting Started
+1. Clone this repository.
+2. Install dependencies:
+   pip install -r requirements.txt
+3. Donwload the saved model from Google Drive.
+4. Run a prediction test:
+   python test_refine_model.py
 
 ## Future Work
-Incorporate more datasets for better generalization.
-Experiment with advanced deep learning models for improved accuracy.
+- Incorporate more datasets for better generalization.
+- Experiment with advanced deep learning models for improved accuracy.
+-  Deploy the model via a web interface or API
+
+## License
+This project is intended for educational and portfolio purposes. 
+
+## 🚀 Thank you for visiting!
